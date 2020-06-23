@@ -14,7 +14,7 @@ def bestlanguage (mylang):
             print ("You like %s %s" % lang)
 
 while True:
-    print ("What language do you like progarmming in? ")
+    print ("What language do you like programming in? ")
     bestlanguage(input())
     time.sleep(2)
     
