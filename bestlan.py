@@ -1,5 +1,6 @@
 import time
 def bestlanguage (mylang):
+    found = 0
     langlist = (
         ("Python","You Rock! Big guy!"),
         ("microPython","You also rock, little guy!"),
@@ -11,10 +12,13 @@ def bestlanguage (mylang):
         ("Pascal","Dear god, WHY?"))
     for lang in langlist:
         if mylang.lower() == lang[0].lower():
+            found =1
             print ("You like %s %s" % lang)
+            break
+    if found == 0:
+        print ("You like %s, never heard of it" % mylang)
 
 while True:
     print ("What language do you like programming in? ")
     bestlanguage(input())
     time.sleep(2)
-    
